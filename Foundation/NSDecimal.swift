@@ -34,10 +34,14 @@ public enum NSCalculationError : UInt {
     case DivideByZero
 }
 
-public var NSDecimalMaxSize: Int32 { NSUnimplemented() }
+public var NSDecimalMaxSize: Int32 {
+    return 8
+}
 // Give a precision of at least 38 decimal digits, 128 binary positions.
 
-public var NSDecimalNoScale: Int32 { NSUnimplemented() }
+public var NSDecimalNoScale: Int32 {
+    return 32767
+}
 
 public struct NSDecimal {
     public var _exponent: Int32
